@@ -1,0 +1,70 @@
+
+<div  id="seologies_expert_vocabulary_page" class="seologies_page" >
+    <ul class="seologies_tabs">
+      <li class="seologies_tab_selected" ><a href="javascript:seologiesShowPage('expert_vocabulary')">Expert vocabulary</a></li>
+      <li><a href="javascript:seologiesShowPage('audit_text')">Audit text</a></li>
+    </ul>
+    <div class="search_seologies_expert_vocabulary">
+      <table>
+       <tr>
+         <td>  
+            <div class="position_item_seo">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+                  <input placeholder="Keywords" type="text" name="seologies_words" id="seologies_words" class="form-control"/>
+                </div>
+              </div>
+            </div>
+            <div class="position_item_seo">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+                <select name="seologies_country"  id="seologies_country" class="form-control">
+                    <option value="us_en">USA (English)</option>
+                    <option value="es_es">Spain (Spanish)</option>
+                    <option value="fr_fr">France (French)</option>
+                    <option value="it_it">Italy (Italian)</option>
+                   <option value="de_de">Germany (German)</option>
+                </select>
+                </div>
+              </div>
+            </div>
+            <div class="position_item_seo">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+                  <div class="checkposition">
+                    <input   type="checkbox" checked  name="seologies_showtype" id="seologies_showtype"    value="cloud" /> 
+                      show as cloud
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="position_item_seo">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+                <input  type="button" class="seologiesbtn-blueTitle"  onclick="seologiesUseTitle('seologies_words')" value="Use Title as Keywords" />
+                </div>
+              </div>
+            </div>
+			 <div class="position_item_seo">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+                  <input  type="button" class="seologiesbtn" name="seologies_expert_vocabulary_btn" id="seologies_expert_vocabulary_btn" onclick="seologiesDoToolExec('relevantwords')" value="Get Expert Words" />
+                </div>
+              </div>
+            </div>
+         </td>
+       </tr>
+       
+      </table>
+    </div>
+
+ <div style="float:left; width:100%; " class="seologiesProgress">
+     <div class="seologiesBar"></div>
+  </div>
+  
+  <br clear="all" />
+
+ <div id="seologiesrelevantwordsResultDiv" >
+  </div>
+ <br clear="all" />
+</div>

@@ -1,0 +1,84 @@
+<div  id="seologies_audit_text_page" class="seologies_page" >
+  <ul class="seologies_tabs">
+      <li><a href="javascript:seologiesShowPage('expert_vocabulary')">Expert vocabulary</a></li>
+      <li class="seologies_tab_selected" ><a href="javascript:seologiesShowPage('audit_text')">Audit text</a></li>
+  </ul>
+  <div class="search_seologies_audit_text">
+		<table>
+		 <tr>
+		   <td>
+			<div class="position_item_seo_audit">
+              <div class="fullposition_item_seo">
+                <div class="centerposition_item_seo">
+					<input placeholder="Keywords" type="text" name="seologies_auditwords" id="seologies_auditwords" class="form-control"/>
+				  </div>
+				</div>
+			   </div>
+			   <div class="position_item_seo_audit">
+              	<div class="fullposition_item_seo">
+                	<div class="centerposition_item_seo">
+					  <select name="seologies_auditcountry"  id="seologies_auditcountry" class="form-control">
+						  <option value="us_en">USA (English)</option>
+						  <option value="es_es">Spain (Spanish)</option>
+						  <option value="fr_fr">France (French)</option>
+						  <option value="it_it">Italy (Italian)</option>
+						 <option value="de_de">Germany (German)</option>
+					 </select>
+					</div>
+				   </div>
+			   </div>
+		   </td>
+		 </tr>
+			
+		 <tr>
+			<td>
+			 	<div class="position_item_seo_audit">
+              		<div class="fullposition_item_seo">
+                		<div class="centerposition_item_seo">
+					 		<ul class="seologies_tabs_audit">
+						  		<li id="seologies_audit_url_li"   onclick="seologiesShowAuditUrl()" ><a>URL</a></li>
+						  		<li id="seologies_audit_text_li"  onclick="seologiesShowAuditText()"><a>Text</a></li>
+						 	</ul>
+							<div  id="seologies_audit_url_div" >
+								<input class="form-control" placeholder="URL" type="text" name="seologies_auditurl" id="seologies_auditurl"/>
+							</div> 
+							<div id="seologies_audit_text_div" >
+								<textarea  placeholder="TEXT" name="seologies_audittext" id="seologies_audittext"></textarea>
+							</div> 
+
+						</div>
+					</div>
+				</div>
+				<div class="position_item_seo_audit">
+              		<div class="fullposition_item_seo">
+						<div class="centerposition_item_seo">
+							<div class="btn_position_left">
+								<input  type="button" name="seologies_audit_text_btn" id="seologies_audit_text_btn"  class="seologiesbtn" onclick="seologiesDoToolExec('relevantwordscompare')" value="Audit Text" />
+							</div>
+							<div class="btn_position_right">
+								<input  type="button" class="left-bn"  onclick="seologiesUseTitle('seologies_auditwords')" value="Use Title as Keywords" />
+								<input  type="button" class="right-bn" onclick="seologiesUseText('seologies_audittext')" value="Use Content as Text" />
+							</div>
+				  		</div>
+					</div>
+				</div>
+			</td>	
+		 </tr>
+
+		</table>
+	</div>
+ <div style="float:left; width:100%; " class="seologiesProgress">
+     <div class="seologiesBar"></div>
+  </div>
+  
+  
+   <br clear="all" />
+
+ <div id="seologiesrelevantwordscompareResultDiv" >
+ &nbsp;
+	 <div class="imginfo">
+		<img src="https://www.seologies.com/blog/wp-content/plugins/seologies/img/draganddrop.png">
+	</div>
+</div>
+</div> 
+

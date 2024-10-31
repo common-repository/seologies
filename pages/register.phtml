@@ -1,0 +1,45 @@
+<div  id="seologies_register_page" class="seologies_page" >
+	<div class="seo_login">
+		<div class="seo_login_center">
+			<table>
+			 <tr>
+			   <td>
+			   		<p>Get Started</p>
+			   </td>
+			 </tr>
+			 <tr>
+			   <td>
+			    <input class="inserdata" placeholder="Email" placetype="text" name="seologies_register_email" value="<?php echo $current_user->user_email ?>" id="seologies_register_email" />
+			   </td>
+			 </tr>
+			 
+			 <tr>
+			   <td>
+			    <input class="inserdata" placeholder="Name" type="text" name="seologies_register_name" id="seologies_register_name" />
+			   </td>
+			 </tr>
+			 
+			 <tr>
+			   <td>
+			    <input class="inserdata" placeholder="Password" type="password" name="seologies_register_password" id="seologies_register_password" />
+			   </td>
+			 </tr>
+			 
+			 <tr>
+			   <td colspan="2" >
+			     <input  type="button" name="seologies_register_btn" class="seologiesbtn" id="seologies_register_btn" onclick="seologiesDoRegister()" value="Register" />
+			   </td>
+			 </tr>
+			 
+			</table>
+		</div>
+	</div>
+	<div class="seo_login">
+		<div class="seo_login_center">
+			<a class="seo_btn_login" href="javascript:seologiesShowPage('login')" >Login with exsisting account</a>
+		</div>
+	</div>
+	 <br clear="all" />
+	 <br clear="all" />
+</div>
+ 

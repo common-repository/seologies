@@ -1,0 +1,14 @@
+<script>
+  var seologies_loggedin = '<?php echo $seologies_info['loggedin']; ?>';
+
+  <?php if (!empty($seologies_info['user_info'])): ?>
+      jQuery(document).ready(function() {seologiesShowUserInfo(jQuery.parseJSON("<?php echo str_replace('"', '\"', json_encode($seologies_info['user_info'])) ?>"))});
+  <?php endif; ?>
+  
+  <?php echo $seologies_info['script']; ?>
+</script>
+<div  id="seologies_user_div" >
+   <a class="seo_logout" href="javascript:seologiesDoLogout()" >Logout</a>   
+   <span  id="seologies_user_name"></span> 
+   <span  id="seologies_user_info" style="display: none;"></span> 
+</div>
